@@ -1,0 +1,36 @@
+POST http://localhost:5000/api/patients/register
+Content-Type: application/json
+
+{
+  "name": "John Patient",
+  "email": "john@gmail.com",
+  "password": "123456",
+  "phone": "9876543210",
+  "address": "Hyderabad",
+  "age": 28,
+  "gender": "Male"
+}
+###
+
+POST http://localhost:5000/api/patients/login
+Content-Type: application/json 
+
+{
+  "email": "john@gmail.com",
+  "password": "123456"
+}
+###
+
+GET http://localhost:5000/api/doctors/all 
+###
+
+POST http://localhost:5000/api/doctors/login
+Content-Type: application/json
+
+{
+  "email": "dr.aurore.bogisich.26@example.com",
+  "password": "SeedPass123!"
+}
+###
+
+GET http://localhost:5000/api/hospital
